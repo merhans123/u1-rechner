@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       daten = (Array.isArray(j) ? j : []).map(k => {
         const u1 = Array.isArray(k.u1) ? k.u1 : [];
         return {
-          name: String(k.name || "Unbekannte Kasse"),
+          name: String(k.kasse || "Unbekannte Kasse"),
           u1: u1.map(t => ({
             // Felder: erstattung, umlagesatz (werden als Zahlen erwartet)
             erstattung: toNumber(t.erstattung),
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             label: t.label || (t.erstattung + "% / " + t.umlagesatz + "%")
           }))
         };
-      }).sort((a, b) => a.name.localeCompare(b.name, "de"));
+      }).sort((a, b) => a.kasse.localeCompare(b.kasse, "de"));
       initSelect();
       initModus();
     })
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     daten.forEach((k, i) => {
       const o = document.createElement("option");
       o.value = i; // Index in daten
-      o.textContent = k.name;
+      o.textContent = k.kasse;
       kassenSelect.appendChild(o);
     });
 
@@ -184,10 +184,10 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!kasse) return;
       const intervalle = berechneIntervalleFor(idx);
       if (intervalle.length === 0) {
-        rows.push([kasse.name, "", "", "", ""]);
+        rows.push([kasse.kasse, "", "", "", ""]);
       } else {
         intervalle.forEach(i => {
-          rows.push([kasse.name, i.von, i.bis, i.tarif.erstattung, i.tarif.umlagesatz]);
+          rows.push([kasse.kasse, i.von, i.bis, i.tarif.erstattung, i.tarif.umlagesatz]);
         });
       }
     });
@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const intervalle = berechneIntervalleFor(kassenIndex);
     const verwendete = new Set(intervalle.map(i => i.tarif));
 
-    let html = `<h3>${kasse.name}</h3>`;
+    let html = `<h3>${kasse.kasse}</h3>`;
 
     if (intervalle.length === 0) {
       html += `<p>Für diese Krankenkasse sind keine U1-Tarife hinterlegt.</p>`;
