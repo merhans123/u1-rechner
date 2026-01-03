@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   // Daten laden und normalisieren
-  fetch("data/krankenkassen_u1.json")
+  fetch("./data/krankenkassen_u1.json")
     .then(r => {
       if (!r.ok) throw new Error(`Netzwerkfehler: ${r.status} ${r.statusText}`);
       return r.json();
@@ -223,7 +223,7 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error("Fehler beim Rendern der Kasse", kasse, e);
         const errDiv = document.createElement("div");
         errDiv.className = "kasse fehler";
-        errDiv.textContent = `Fehler beim Berechnen für ${kasse.name}. Siehe Konsole.`;
+        errDiv.textContent = `Fehler beim Berechnen für ${kasse.kasse}. Siehe Konsole.`;
         ergebnisseEl.appendChild(errDiv);
       }
     });
