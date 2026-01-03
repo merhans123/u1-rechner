@@ -1,9 +1,8 @@
 body{font-family:Arial, sans-serif;max-width:1000px;margin:40px auto;}
+select{width:100%;min-height:320px;font-size:14px;}
 table{border-collapse:collapse;width:100%;margin-top:10px}
 th,td{border:1px solid #ccc;padding:6px}
 th{background:#eee}
 .kasse{margin-top:40px;border-top:2px solid #ccc;padding-top:20px}
 .erklaerung{background:#f4f6f8;padding:12px;border-left:4px solid #3498db}
-.hinweis{color:#777;font-style:italic}
-button{margin-top:10px}
 footer.datenschutz{margin-top:60px;font-size:0.9em;color:#444;border-top:2px solid #ccc;padding-top:20px}

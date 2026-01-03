@@ -12,43 +12,20 @@
 <p class="erklaerung">
 <strong>Was bedeutet wirtschaftlich sinnvoll?</strong><br>
 Ein U1-Tarif gilt als wirtschaftlich sinnvoll, wenn die Erstattungen im Jahresverlauf
-den gezahlten Jahresbeitrag übersteigen. Zusätzlich wird immer der Tarif angezeigt,
-der bei wenigen Krankheitstagen die geringsten Kosten verursacht.
+den gezahlten Jahresbeitrag übersteigen.
 </p>
 
 <section>
-  <h2>Berechnungsmethode</h2>
-  <label><input type="radio" name="modus" value="360" checked> 30-stel-Methode (360 Tage)</label>
-  <label><input type="radio" name="modus" value="arbeitstage"> Arbeitstage</label>
-
-  <div id="arbeitstageOptionen" style="display:none;margin-top:10px">
-    <label><input type="radio" name="tagewoche" value="3"> 3-Tage-Woche</label>
-    <label><input type="radio" name="tagewoche" value="4"> 4-Tage-Woche</label>
-    <label><input type="radio" name="tagewoche" value="5" checked> 5-Tage-Woche</label>
-  </div>
-</section>
-
-<section>
   <h2>Krankenkassen auswählen</h2>
-  <input type="text" id="kassenSuche" placeholder="Krankenkasse suchen …">
+  <input type="text" id="kassenSuche" placeholder="Krankenkasse tippen (z. B. AOK, IKK …)">
   <select id="kassenSelect" multiple></select>
-  <br><br>
-  <button id="csvAlle">CSV-Sammelexport (alle ausgewählten)</button>
 </section>
 
 <section id="ergebnisse"></section>
 
 <footer class="datenschutz">
   <h2>Datenschutz-Hinweis</h2>
-  <p>
-    Diese Anwendung verarbeitet <strong>keine personenbezogenen Daten</strong>.
-    Alle Berechnungen erfolgen ausschließlich im Browser des Nutzers.
-    Es werden keine Eingaben gespeichert, übertragen oder ausgewertet.
-  </p>
-  <p>
-    Die dargestellten Ergebnisse basieren auf öffentlich verfügbaren
-    Beitragssätzen der gesetzlichen Krankenkassen (U1-Verfahren).
-  </p>
+  <p>Diese Anwendung verarbeitet keine personenbezogenen Daten.</p>
 </footer>
 
 <script src="app.js"></script>
