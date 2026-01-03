@@ -1,4 +1,5 @@
 // app.js — überarbeitet: Validierung, Typ-Normalisierung, Tie-Breaker, CSV-Escaping, Filter-Deselect, Cache
+console.log("app.js geladen");
 
 document.addEventListener('DOMContentLoaded', () => {
   // Zustand
@@ -50,6 +51,16 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error("Fehler beim Laden der Kassen-Daten:", err);
       ergebnisseEl.textContent = "Fehler beim Laden der Daten. Siehe Konsole.";
     });
+  .then(j => {
+  console.log("JSON erfolgreich geladen:", j);
+  daten = j.sort((a, b) => a.kasse.localeCompare(b.kasse, "de"));
+  initSelect();
+  initModus();
+})
+.catch(err => {
+  console.error("Fehler beim Laden der JSON:", err);
+});
+
 
   // Init-Modus / Radios
   function initModus() {
