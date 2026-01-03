@@ -1,1 +1,2 @@
-# u1-rechner
+# U1 Rechner
+Statische Entscheidungshilfe für Arbeitgeber.

@@ -1,0 +1,1758 @@
+[
+  {
+    "kasse": "IKK gesund plus (Ost)",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 2.2
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 3.0
+      }
+    ]
+  },
+  {
+    "kasse": "IKK BB",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.93
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 2.19
+      }
+    ]
+  },
+  {
+    "kasse": "AOK Sachsen-Anhalt",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.6
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 2.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 40.0,
+        "umlagesatz_prozent": 1.6
+      }
+    ]
+  },
+  {
+    "kasse": "IKK classic",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 65.0,
+        "umlagesatz_prozent": 3.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 2.3
+      }
+    ]
+  },
+  {
+    "kasse": "AOK PLUS",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 65.0,
+        "umlagesatz_prozent": 2.95
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 2.15
+      }
+    ]
+  },
+  {
+    "kasse": "IKK - Die Innovationskasse",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 75.0,
+        "umlagesatz_prozent": 3.25
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.7
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 40.0,
+        "umlagesatz_prozent": 1.65
+      }
+    ]
+  },
+  {
+    "kasse": "Techniker Krankenkasse",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 3.2
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.3
+      }
+    ]
+  },
+  {
+    "kasse": "HEK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.7
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.65
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.2
+      }
+    ]
+  },
+  {
+    "kasse": "Mobil Krankenkasse",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "SECURVITA BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "pronova BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.4
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.8
+      }
+    ]
+  },
+  {
+    "kasse": "AOK Bremen/Bremerhaven",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.3
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.8
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 3.5
+      }
+    ]
+  },
+  {
+    "kasse": "hkk",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 1.9
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 2.7
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.6
+      }
+    ]
+  },
+  {
+    "kasse": "BKK firmus",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Salzgitter",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.6
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 2.1
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Public",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BKK exklusiv",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 2.49
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 3.49
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Technoform",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BKK24",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BKK EWE",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "TUI BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "KKH",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.5
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.8
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 3.8
+      }
+    ]
+  },
+  {
+    "kasse": "energie-BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "AOK Niedersachsen",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 65.0,
+        "umlagesatz_prozent": 2.5
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 55.0,
+        "umlagesatz_prozent": 2.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 75.0,
+        "umlagesatz_prozent": 3.0
+      }
+    ]
+  },
+  {
+    "kasse": "BKK EUREGIO",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 1.99
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 3.3
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.5
+      }
+    ]
+  },
+  {
+    "kasse": "Heimat Krankenkasse",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      }
+    ]
+  },
+  {
+    "kasse": "Bertelsmann BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.4
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Diakonie",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.75
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Miele",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.4
+      }
+    ]
+  },
+  {
+    "kasse": "BKK DürkoppAdler",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.8
+      }
+    ]
+  },
+  {
+    "kasse": "BKK GILDEMEISTER SEIDENSTICKER",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 2.9
+      }
+    ]
+  },
+  {
+    "kasse": "AOK NordWest",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.75
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.29
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.09
+      },
+      {
+        "id": "U1_4",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.69
+      }
+    ]
+  },
+  {
+    "kasse": "Continentale Betriebskrankenkasse",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "AKA",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 3.15
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.95
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.7
+      }
+    ]
+  },
+  {
+    "kasse": "AOK Rheinland/Hamburg Die Gesundheitskasse",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.05
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.6
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.89
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Deutsche Bank AG",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "NOVITAS BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.3
+      }
+    ]
+  },
+  {
+    "kasse": "bkk melitta hmr",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 65.0,
+        "umlagesatz_prozent": 2.7
+      }
+    ]
+  },
+  {
+    "kasse": "BKK VDN",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "VIACTIV Krankenkasse",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.4
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.5
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.9
+      }
+    ]
+  },
+  {
+    "kasse": "BERGISCHE KRANKENKASSE",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BARMER",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 65.0,
+        "umlagesatz_prozent": 2.5
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.9
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Werra-Meissner",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "Merck BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 1.7
+      }
+    ]
+  },
+  {
+    "kasse": "Salus BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "AOK Hessen",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.4
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.5
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_4",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 3.3
+      }
+    ]
+  },
+  {
+    "kasse": "EY BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Wirtschaft & Finanzen",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Herkules",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BKK B. Braun Aesculap",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BKK PwC",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "KARL MAYER BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.9
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Linde",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "DAK-Gesundheit",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.4
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.3
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 1.9
+      },
+      {
+        "id": "U1_4",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 3.9
+      }
+    ]
+  },
+  {
+    "kasse": "R+V Betriebskrankenkasse",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BAHN-BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 3.2
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 2.1
+      }
+    ]
+  },
+  {
+    "kasse": "BKK PFAFF",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "AOK Rheinland-Pfalz/Saarland",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 3.0
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.1
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.4
+      },
+      {
+        "id": "U1_4",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.9
+      }
+    ]
+  },
+  {
+    "kasse": "BKK evm",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "Debeka BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Pfalz",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "IKK Südwest",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 3.0
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.9
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 2.0
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Groz-Beckert",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 2.7
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Scheufelen",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "WMF BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "Südzucker BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 1.9
+      }
+    ]
+  },
+  {
+    "kasse": "mhplus BKK West",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.5
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.5
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 3.0
+      }
+    ]
+  },
+  {
+    "kasse": "BKK FREUDENBERG",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BKK MTU",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      }
+    ]
+  },
+  {
+    "kasse": "vivida bkk",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.3
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Schwarzwald-Baar-Heuberg",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.1
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Rieker.RICOSTA.Weisser",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Würth",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 65.0,
+        "umlagesatz_prozent": 2.4
+      }
+    ]
+  },
+  {
+    "kasse": "AOK Baden-Württemberg",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.8
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.05
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.5
+      },
+      {
+        "id": "U1_4",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.9
+      }
+    ]
+  },
+  {
+    "kasse": "MAHLE BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BOSCH BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.3
+      }
+    ]
+  },
+  {
+    "kasse": "Mercedes-Benz BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "ZF BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.3
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 3.9
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.7
+      }
+    ]
+  },
+  {
+    "kasse": "BKK VerbundPlus",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Akzo Nobel Bayern",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.9
+      }
+    ]
+  },
+  {
+    "kasse": "Krones BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.5
+      }
+    ]
+  },
+  {
+    "kasse": "SKD BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "Koenig & Bauer BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "Audi BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 3.0
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.3
+      }
+    ]
+  },
+  {
+    "kasse": "BKK Faber-Castell & Partner",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 40.0,
+        "umlagesatz_prozent": 1.5
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 3.3
+      }
+    ]
+  },
+  {
+    "kasse": "BMW BKK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 4.0
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.73
+      }
+    ]
+  },
+  {
+    "kasse": "AOK Bayern Die Gesundheitskasse",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.5
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      },
+      {
+        "id": "U1_3",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 3.7
+      },
+      {
+        "id": "U1_4",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.6
+      }
+    ]
+  },
+  {
+    "kasse": "SBK",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 50.0,
+        "umlagesatz_prozent": 1.7
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.9
+      }
+    ]
+  },
+  {
+    "kasse": "BKK ProVita",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.1
+      }
+    ]
+  },
+  {
+    "kasse": "AOK Nordost",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 65.0,
+        "umlagesatz_prozent": 2.5
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 55.0,
+        "umlagesatz_prozent": 1.8
+      }
+    ]
+  },
+  {
+    "kasse": "mkk - meine krankenkasse",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 70.0,
+        "umlagesatz_prozent": 2.44
+      }
+    ]
+  },
+  {
+    "kasse": "BIG direkt gesund",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 3.3
+      },
+      {
+        "id": "U1_2",
+        "erstattung_prozent": 60.0,
+        "umlagesatz_prozent": 2.2
+      }
+    ]
+  },
+  {
+    "kasse": "Knappschaft (Ang. mit Mehrleistungsanspr.)",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 0.8
+      }
+    ]
+  },
+  {
+    "kasse": "Knappschaft (allg. Verf. einschl. Minijobs)",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 0.8
+      }
+    ]
+  },
+  {
+    "kasse": "Knappschaft (bes. knappschaftl. Meldeverf.)",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 0.8
+      }
+    ]
+  },
+  {
+    "kasse": "Knappschaft (als See-Krankenversicherung)",
+    "jahr": 2026,
+    "u1": [
+      {
+        "id": "U1_1",
+        "erstattung_prozent": 80.0,
+        "umlagesatz_prozent": 0.8
+      }
+    ]
+  }
+]
