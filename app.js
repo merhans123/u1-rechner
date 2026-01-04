@@ -1,24 +1,17 @@
-/* ===============================
-   U1-Rechner – app.js (ES5)
-   Passend zu JSON:
-   erstattung_prozent / umlagesatz_prozent
-   =============================== */
-
 var daten = [];
 var tageJahr = 360;
 
-/* --- Wirtschaftlichkeit (lohnunabhängig) --- */
+/* Wirtschaftlichkeit */
 function wirtschaftlichkeit(t, tage) {
   return t.umlagesatz_prozent - (t.erstattung_prozent / tageJahr * tage);
 }
 
-/* --- Break-Even-Tag --- */
+/* Break-Even */
 function breakEven(t) {
-  if (!t.erstattung_prozent || !t.umlagesatz_prozent) return null;
   return Math.ceil((t.umlagesatz_prozent * tageJahr) / t.erstattung_prozent);
 }
 
-/* --- Intervalle berechnen (0–360 Tage) --- */
+/* Intervalle */
 function berechneIntervalle(u1) {
   var res = [];
   var cur = null;
@@ -47,148 +40,143 @@ function berechneIntervalle(u1) {
   return res;
 }
 
-/* --- Suche --- */
+/* Suche */
 function filterKassen() {
   var q = document.getElementById("kassenSuche").value.toLowerCase();
-  var opts = document.getElementById("kassenSelect").options;
-  var i;
-
-  for (i = 0; i < opts.length; i++) {
-    opts[i].style.display =
-      opts[i].text.toLowerCase().indexOf(q) >= 0 ? "" : "none";
+  var o = document.getElementById("kassenSelect").options;
+  for (var i = 0; i < o.length; i++) {
+    o[i].style.display = o[i].text.toLowerCase().indexOf(q) >= 0 ? "" : "none";
   }
 }
 
-/* --- Render gesamt --- */
+/* Render */
 function render() {
   var out = document.getElementById("ergebnisse");
   out.innerHTML = "";
-
   var sel = document.getElementById("kassenSelect").selectedOptions;
-  var i;
-
-  for (i = 0; i < sel.length; i++) {
+  for (var i = 0; i < sel.length; i++) {
     out.appendChild(renderKasse(daten[sel[i].value]));
   }
 }
 
-/* --- Render einzelne Krankenkasse --- */
+/* Render Krankenkasse */
 function renderKasse(k) {
-  var div = document.createElement("div");
-  div.className = "kasse";
+  var d = document.createElement("div");
+  d.className = "kasse";
 
   var h = document.createElement("h3");
-  h.appendChild(document.createTextNode(k.kasse));
-  div.appendChild(h);
+  h.textContent = k.kasse;
+  d.appendChild(h);
 
   var u1 = k.u1;
-  if (!u1 || u1.length === 0) {
-    var p = document.createElement("p");
-    p.appendChild(document.createTextNode(
-      "Für diese Krankenkasse sind keine U1-Tarife vorhanden."
-    ));
-    div.appendChild(p);
-    return div;
-  }
-
   var intervalle = berechneIntervalle(u1);
-  var used = [];
+  var verwendete = [];
 
-  /* Tabelle 1 – wirtschaftlich sinnvoller Tarif */
-  var table = document.createElement("table");
+  /* Tabelle 1: Wirtschaftlich sinnvoll */
+  var t1 = document.createElement("table");
   var tr = document.createElement("tr");
-  ["von", "bis", "Erstattung", "Umlagesatz"].forEach(function (x) {
+  ["von","bis","Erstattung","Umlagesatz"].forEach(function(x){
     var th = document.createElement("th");
-    th.appendChild(document.createTextNode(x));
+    th.textContent = x;
     tr.appendChild(th);
   });
-  table.appendChild(tr);
+  t1.appendChild(tr);
 
-  var i;
-  for (i = 0; i < intervalle.length; i++) {
-    var r = intervalle[i];
-    used.push(r.tarif);
-
+  intervalle.forEach(function(r){
+    verwendete.push(r.tarif);
     tr = document.createElement("tr");
-    [
-      r.von,
-      r.bis,
-      r.tarif.erstattung_prozent + "%",
-      r.tarif.umlagesatz_prozent + "%"
-    ].forEach(function (v) {
+    [r.von, r.bis,
+     r.tarif.erstattung_prozent + "%",
+     r.tarif.umlagesatz_prozent + "%"].forEach(function(v){
       var td = document.createElement("td");
-      td.appendChild(document.createTextNode(v));
+      td.textContent = v;
       tr.appendChild(td);
     });
-    table.appendChild(tr);
-  }
+    t1.appendChild(tr);
+  });
 
-  div.appendChild(table);
+  d.appendChild(t1);
 
-  /* Tabelle 2 – Hinweise */
+  /* Tabelle 2: Break-Even */
   var t2 = document.createElement("table");
   tr = document.createElement("tr");
-  ["Tarif", "Hinweis"].forEach(function (x) {
+  ["Tarif","Erstattung > Jahresbeitrag ab Tag"].forEach(function(x){
     var th = document.createElement("th");
-    th.appendChild(document.createTextNode(x));
+    th.textContent = x;
     tr.appendChild(th);
   });
   t2.appendChild(tr);
 
-  for (i = 0; i < u1.length; i++) {
-    if (used.indexOf(u1[i]) === -1) {
+  u1.forEach(function(t){
+    tr = document.createElement("tr");
+    var td1 = document.createElement("td");
+    td1.textContent = t.erstattung_prozent + "% / " + t.umlagesatz_prozent + "%";
+    var td2 = document.createElement("td");
+    td2.textContent = breakEven(t);
+    tr.appendChild(td1);
+    tr.appendChild(td2);
+    t2.appendChild(tr);
+  });
+
+  d.appendChild(t2);
+
+  /* Tabelle 3: Hinweise */
+  var hatHinweis = false;
+  var t3 = document.createElement("table");
+  tr = document.createElement("tr");
+  ["Tarif","Hinweis"].forEach(function(x){
+    var th = document.createElement("th");
+    th.textContent = x;
+    tr.appendChild(th);
+  });
+  t3.appendChild(tr);
+
+  u1.forEach(function(t){
+    if (verwendete.indexOf(t) === -1) {
+      hatHinweis = true;
       tr = document.createElement("tr");
-
       var td1 = document.createElement("td");
-      td1.appendChild(document.createTextNode(
-        u1[i].erstattung_prozent + "% / " +
-        u1[i].umlagesatz_prozent + "%"
-      ));
-
+      td1.textContent = t.erstattung_prozent + "% / " + t.umlagesatz_prozent + "%";
       var td2 = document.createElement("td");
       td2.className = "hinweis";
-      var be = breakEven(u1[i]);
-      td2.appendChild(document.createTextNode(
+      td2.textContent =
         "Dieser Tarif wird in keinem Kranktage-Bereich der kostengünstigste. " +
-        "Die Erstattung übersteigt zwar den Jahresbeitrag ab Tag " + be +
-        ", dennoch ist ein anderer Tarif über den gesamten Zeitraum wirtschaftlich günstiger."
-      ));
-
+        "Die Erstattung übersteigt den Jahresbeitrag ab Tag " +
+        breakEven(t) +
+        ", dennoch ist ein anderer Tarif über den gesamten Zeitraum wirtschaftlich günstiger.";
       tr.appendChild(td1);
       tr.appendChild(td2);
-      t2.appendChild(tr);
+      t3.appendChild(tr);
     }
-  }
+  });
 
-  div.appendChild(t2);
-  return div;
+  if (hatHinweis) d.appendChild(t3);
+
+  return d;
 }
 
-/* --- Init --- */
+/* Init */
 function init() {
-  var xhr = new XMLHttpRequest();
-  xhr.open("GET", "./data/krankenkassen_u1.json", true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      daten = JSON.parse(xhr.responseText);
-      daten.sort(function (a, b) {
-        return a.kasse.localeCompare(b.kasse, "de");
+  var x = new XMLHttpRequest();
+  x.open("GET","./data/krankenkassen_u1.json",true);
+  x.onreadystatechange = function(){
+    if(x.readyState === 4 && x.status === 200){
+      daten = JSON.parse(x.responseText);
+      daten.sort(function(a,b){
+        return a.kasse.localeCompare(b.kasse,"de");
       });
-
-      var sel = document.getElementById("kassenSelect");
-      var i;
-      for (i = 0; i < daten.length; i++) {
+      var s = document.getElementById("kassenSelect");
+      daten.forEach(function(k,i){
         var o = document.createElement("option");
         o.value = i;
-        o.appendChild(document.createTextNode(daten[i].kasse));
-        sel.appendChild(o);
-      }
-
-      sel.onchange = render;
+        o.textContent = k.kasse;
+        s.appendChild(o);
+      });
+      s.onchange = render;
       document.getElementById("kassenSuche").onkeyup = filterKassen;
     }
   };
-  xhr.send();
+  x.send();
 }
 
 window.onload = init;
