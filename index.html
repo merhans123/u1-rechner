@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>U1-Umlage – Entscheidungshilfe</title>
+  <title>U1-Rechner – Entscheidungshilfe</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,9 +11,29 @@
 
 <p class="erklaerung">
 <strong>Was bedeutet wirtschaftlich sinnvoll?</strong><br>
-Ein U1-Tarif gilt als wirtschaftlich sinnvoll, wenn er – bezogen auf ein Jahr –
-die geringsten Gesamtkosten aus Umlagebeiträgen und Erstattungen verursacht.
+Ein Tarif ist wirtschaftlich sinnvoll, wenn die Gesamtkosten aus Umlagebeiträgen
+abzüglich der Erstattungen geringer sind als bei den Alternativen.
 </p>
+
+<section>
+<h2>Einstellungen</h2>
+
+<label>
+  <input type="radio" name="modus" value="360" checked>
+  30-igstel-Methode (360 Tage / Jahr)
+</label><br>
+
+<label>
+  <input type="radio" name="modus" value="arbeitstage">
+  Arbeitstage
+</label>
+
+<div id="arbeitstageBox" style="margin-left:20px; display:none;">
+  <label><input type="radio" name="tagewoche" value="3"> 3-Tage-Woche</label>
+  <label><input type="radio" name="tagewoche" value="4"> 4-Tage-Woche</label>
+  <label><input type="radio" name="tagewoche" value="5" checked> 5-Tage-Woche</label>
+</div>
+</section>
 
 <section>
 <h2>Krankenkassen auswählen</h2>
@@ -24,7 +44,7 @@ die geringsten Gesamtkosten aus Umlagebeiträgen und Erstattungen verursacht.
 <section id="ergebnisse"></section>
 
 <footer>
-<p><strong>Datenschutz:</strong> Keine personenbezogenen Daten. Lokale Berechnung im Browser.</p>
+<p><strong>Datenschutz:</strong> Keine personenbezogenen Daten. Berechnung vollständig lokal im Browser.</p>
 </footer>
 
 <script src="app.js"></script>

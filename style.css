@@ -6,13 +6,13 @@ body{
 
 select{
   width: 100%;
-  min-height: 300px;
+  min-height: 260px;
 }
 
 table{
   border-collapse: collapse;
   width: 100%;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 th, td{
