@@ -1,41 +1,24 @@
 /* ===============================
    U1-Rechner – app.js (ES5)
-   ITSG-kompatibel + robust
+   Passend zu JSON:
+   erstattung_prozent / umlagesatz_prozent
    =============================== */
 
 var daten = [];
 var tageJahr = 360;
 
-/* --- Tarif normalisieren (ITSG / eigene JSON) --- */
-function normalizeTarif(t) {
-  return {
-    erstattung: parseFloat(
-      t.erstattung ||
-      t.Erstattung ||
-      t.Erstattungssatz ||
-      t.erstattungssatz
-    ),
-    umlagesatz: parseFloat(
-      t.umlagesatz ||
-      t.Umlagesatz ||
-      t.umlage ||
-      t.Umlagesatz
-    )
-  };
-}
-
-/* --- Wirtschaftlichkeit (relativ, lohnunabhängig) --- */
+/* --- Wirtschaftlichkeit (lohnunabhängig) --- */
 function wirtschaftlichkeit(t, tage) {
-  return t.umlagesatz - (t.erstattung / tageJahr * tage);
+  return t.umlagesatz_prozent - (t.erstattung_prozent / tageJahr * tage);
 }
 
 /* --- Break-Even-Tag --- */
 function breakEven(t) {
-  if (!t.erstattung || !t.umlagesatz) return null;
-  return Math.ceil((t.umlagesatz * tageJahr) / t.erstattung);
+  if (!t.erstattung_prozent || !t.umlagesatz_prozent) return null;
+  return Math.ceil((t.umlagesatz_prozent * tageJahr) / t.erstattung_prozent);
 }
 
-/* --- Intervalle berechnen (0–360) --- */
+/* --- Intervalle berechnen (0–360 Tage) --- */
 function berechneIntervalle(u1) {
   var res = [];
   var cur = null;
@@ -98,30 +81,20 @@ function renderKasse(k) {
   h.appendChild(document.createTextNode(k.kasse));
   div.appendChild(h);
 
-  /* Tarife normalisieren */
-  var u1 = [];
-  var i;
-  for (i = 0; i < k.u1.length; i++) {
-    var t = normalizeTarif(k.u1[i]);
-    if (!isNaN(t.erstattung) && !isNaN(t.umlagesatz)) {
-      u1.push(t);
-    }
-  }
-
-  if (u1.length === 0) {
+  var u1 = k.u1;
+  if (!u1 || u1.length === 0) {
     var p = document.createElement("p");
     p.appendChild(document.createTextNode(
-      "Für diese Krankenkasse sind keine gültigen U1-Tarife vorhanden."
+      "Für diese Krankenkasse sind keine U1-Tarife vorhanden."
     ));
     div.appendChild(p);
     return div;
   }
 
-  /* Intervalle */
   var intervalle = berechneIntervalle(u1);
   var used = [];
 
-  /* Tabelle 1 */
+  /* Tabelle 1 – wirtschaftlich sinnvoller Tarif */
   var table = document.createElement("table");
   var tr = document.createElement("tr");
   ["von", "bis", "Erstattung", "Umlagesatz"].forEach(function (x) {
@@ -131,6 +104,7 @@ function renderKasse(k) {
   });
   table.appendChild(tr);
 
+  var i;
   for (i = 0; i < intervalle.length; i++) {
     var r = intervalle[i];
     used.push(r.tarif);
@@ -139,8 +113,8 @@ function renderKasse(k) {
     [
       r.von,
       r.bis,
-      r.tarif.erstattung + "%",
-      r.tarif.umlagesatz + "%"
+      r.tarif.erstattung_prozent + "%",
+      r.tarif.umlagesatz_prozent + "%"
     ].forEach(function (v) {
       var td = document.createElement("td");
       td.appendChild(document.createTextNode(v));
@@ -167,7 +141,8 @@ function renderKasse(k) {
 
       var td1 = document.createElement("td");
       td1.appendChild(document.createTextNode(
-        u1[i].erstattung + "% / " + u1[i].umlagesatz + "%"
+        u1[i].erstattung_prozent + "% / " +
+        u1[i].umlagesatz_prozent + "%"
       ));
 
       var td2 = document.createElement("td");
@@ -175,8 +150,8 @@ function renderKasse(k) {
       var be = breakEven(u1[i]);
       td2.appendChild(document.createTextNode(
         "Dieser Tarif wird in keinem Kranktage-Bereich der kostengünstigste. " +
-        (be ? "Die Erstattung übersteigt den Jahresbeitrag ab Tag " + be + ", " : "") +
-        "dennoch ist ein anderer Tarif über den gesamten Zeitraum wirtschaftlich günstiger."
+        "Die Erstattung übersteigt zwar den Jahresbeitrag ab Tag " + be +
+        ", dennoch ist ein anderer Tarif über den gesamten Zeitraum wirtschaftlich günstiger."
       ));
 
       tr.appendChild(td1);
