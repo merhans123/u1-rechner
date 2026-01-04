@@ -1,6 +1,3 @@
-# U1 Rechner (ES5 + UI)
+# U1-Rechner ES5 – erweiterter Hinweis
 
-- ES5-kompatibel (Safari-sicher)
-- Großes Auswahlfeld für Krankenkassen
-- Suchfunktion aktiv
-- DSGVO-neutral
+Hinweistext je Tarif fachlich präzisiert.
